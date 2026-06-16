@@ -16,17 +16,21 @@ add this file as README.md, and push. See GITHUB-SETUP.md for the commands.
 - 📫 **Reach me:** mrchcoin@gmail.com · [linkedin.com/in/mrchcoin](https://linkedin.com/in/mrchcoin)
 - 🌍 Open to senior/principal **remote** backend & platform roles (and relocation: UAE · EU · Singapore)
 
-### Featured work — distilled patterns from production systems
+### Featured — distilled patterns, across languages
 
-These are small, focused, **fully-tested** Go libraries that implement the
-distributed-systems patterns I use day to day. Clean-room and original; each runs
-with `go run ./example` and passes `go test -race`.
+Small, focused, **fully-tested** libraries implementing the distributed-systems
+patterns I use in production. Clean-room and original; each builds, runs, and is
+verified under a race/thread sanitizer where applicable.
 
-| Repo | What it shows |
-|------|---------------|
-| **[go-saga-orchestrator](https://github.com/mrchcoin/go-saga-orchestrator)** | Saga engine: ordered steps with **automatic compensation/rollback** on failure. Generic, transport-agnostic, race-tested. |
-| **[idempotent-ledger](https://github.com/mrchcoin/idempotent-ledger)** | **Append-only, double-entry** money ledger with **idempotency keys** — retried requests apply exactly once; `Audit()` proves conservation. |
-| **[ws-fanout-gateway](https://github.com/mrchcoin/ws-fanout-gateway)** | Topic-based **WebSocket fan-out hub**: lock-free single-goroutine core, slow-consumer backpressure, per-connection rate limiting. |
+**Go**
+- **[go-saga-orchestrator](https://github.com/mrchcoin/go-saga-orchestrator)** — saga steps with automatic compensation/rollback; race-tested.
+- **[idempotent-ledger](https://github.com/mrchcoin/idempotent-ledger)** — append-only, double-entry ledger with idempotency keys; `Audit()` proves conservation.
+- **[ws-fanout-gateway](https://github.com/mrchcoin/ws-fanout-gateway)** — lock-free WebSocket fan-out hub with slow-consumer backpressure + rate limiting.
+
+**Java · C# · C++**
+- **[idempotent-ledger-java](https://github.com/mrchcoin/idempotent-ledger-java)** — the ledger in Java 21 (JUnit 5, thread-safe).
+- **[saga-orchestrator-dotnet](https://github.com/mrchcoin/saga-orchestrator-dotnet)** — the saga in async C#/.NET 8 (`Task`-based, xUnit).
+- **[cpp-threadpool](https://github.com/mrchcoin/cpp-threadpool)** — header-only C++17 thread pool with `std::future` results; ThreadSanitizer-clean.
 
 <!--
 Optional: add a GitHub stats card once you have public activity, e.g.
