@@ -32,6 +32,19 @@ verified under a race/thread sanitizer where applicable.
 - **[saga-orchestrator-dotnet](https://github.com/mrchcoin/saga-orchestrator-dotnet)** — the saga in async C#/.NET 8 (`Task`-based, xUnit).
 - **[cpp-threadpool](https://github.com/mrchcoin/cpp-threadpool)** — header-only C++17 thread pool with `std::future` results; ThreadSanitizer-clean.
 
+### Open-source contributions (in review)
+
+Upstream pull requests to the infrastructure I work with daily — each with tests, DCO sign-off, and passing local lint/build.
+
+**[Redpanda](https://github.com/redpanda-data/redpanda)** — `rpk` CLI (the streaming platform on my production event backbone)
+- [#30837](https://github.com/redpanda-data/redpanda/pull/30837) — report the active config mode in `rpk redpanda mode`
+- [#30839](https://github.com/redpanda-data/redpanda/pull/30839) — `--skip-cluster` flag for `rpk version`
+- [#30840](https://github.com/redpanda-data/redpanda/pull/30840) — `--watch` flag for `rpk cluster self-test start`
+
+**[ORY Oathkeeper](https://github.com/ory/oathkeeper)** — identity & access proxy
+- [#1274](https://github.com/ory/oathkeeper/pull/1274) — trailing-slash-tolerant trusted-issuer matching (with tests)
+- [#1275](https://github.com/ory/oathkeeper/pull/1275) — remove a stale upstream reference in `jsonx`
+
 <!--
 Optional: add a GitHub stats card once you have public activity, e.g.
 ![stats](https://github-readme-stats.vercel.app/api?username=mrchcoin&show_icons=true)
